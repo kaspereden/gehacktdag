@@ -1,0 +1,83 @@
+@import "reset";
+@import "responsive.gs.12col";
+@import "mixins";
+
+@include fontFace('Dense','../fonts/Dense-Regular');
+@include fontFace('Baron','../fonts/Baron-Neue');
+
+html {
+	height: 100%;
+}
+
+h1 {
+	font-family: Baron;
+	font-size: 4em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: Baron;
+	font-size: 3em;
+	margin: 50px auto;
+	text-align: center;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	color: #2A1A14;
+	height: 100%;
+}
+
+#header {
+	background: transparent url(../img/bg.jpg) 0 0 no-repeat fixed;
+	background-size: cover;
+	color: #ffffff;
+	font-family: Dense;
+	font-size: 3em;
+	min-height: 100%;
+	padding: 35px 0;
+	text-transform: uppercase;
+
+	.span_12 {
+		text-align: center;
+	}
+
+	.row {
+		margin: 80px auto 150px;
+	}
+
+	.row:first-child {
+		margin: auto;
+	}
+}
+
+#main {
+	background: #EDE8EB;
+	border-top: 25px solid #CEBAB7;
+	padding: 70px 0;
+
+	.gutters {
+		p {
+			margin: 70px 0;
+			&::first-letter {
+				float: left;
+				font-family: Dense;
+				font-size: 3em;
+				margin: -7px 5px -7px 0;
+			}
+		}
+	}
+}
+
+#locatie {
+	border-top: 25px solid #CEBAB7;
+	height: 450px;
+}
+
+#sponsors {
+	background: #CEBAB7;
+	border-top: 25px solid #CF996E;
+	padding-bottom: 50px;
+}
