@@ -335,3 +335,16 @@ body {
   border-top: 25px solid #CF996E;
   padding-bottom: 50px;
 }
+
+.button {
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  display: inline-block;
+  margin: 75px 0;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
