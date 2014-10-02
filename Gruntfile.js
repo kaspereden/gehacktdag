@@ -21,6 +21,9 @@ module.exports = function(grunt) {
 			}
 		},
 		watch: {
+			options: {
+				atBegin: true
+			},
 			sass: {
 				files: [
 					'assets/scss/**/*.scss'
@@ -90,7 +93,7 @@ module.exports = function(grunt) {
 			}
 		}
 	});
-	
+
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
@@ -98,26 +101,26 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	
+
 	grunt.registerTask('prebuild', [
 	    'clean',
 	    'compass:dist'
 	]);
-	
+
 	grunt.registerTask('postbuild', [
 		'imagemin',
 		'uglify:production',
 		'cssmin:production'
 	]);
-	
+
 	grunt.registerTask('buildProduction', [
 		'prebuild',
 		'postbuild'
 	]);
-	
+
 	grunt.registerTask('deployProduction', [
 		'buildProduction'
 	]);
 
-	grunt.registerTask('w', [ 'watch' ]);
+	grunt.registerTask('default', [ 'watch' ]);
 };
