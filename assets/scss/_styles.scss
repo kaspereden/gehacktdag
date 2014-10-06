@@ -7,6 +7,10 @@ html {
 	height: 100%;
 }
 
+a {
+	color: #2A1A14;
+}
+
 h1 {
 	font-family: Baron;
 	font-size: 4em;
@@ -19,6 +23,12 @@ h2 {
 	font-size: 3em;
 	margin: 50px auto;
 	text-align: center;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 body {
@@ -71,6 +81,18 @@ body {
 	}
 }
 
+.timetable {
+	ul {
+		margin-bottom: 10px;
+	}
+
+	span {
+		display: inline-block;
+		font-weight: bold;
+		width: 57px;
+	}
+}
+
 #locatie {
 	border-top: 25px solid #CEBAB7;
 	height: 450px;
@@ -80,6 +102,18 @@ body {
 	background: #CEBAB7;
 	border-top: 25px solid #CF996E;
 	padding-bottom: 50px;
+}
+
+#deelnemers {
+	background: #AEC7D2;
+	border-top: 25px solid #918867;
+	padding-bottom: 50px;
+
+	a:after {
+		content: '\a';
+		line-height: 26px;
+		white-space: pre;
+	}
 }
 
 .button {

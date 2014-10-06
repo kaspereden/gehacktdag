@@ -260,6 +260,11 @@ html {
 }
 
 /* line 10, ../scss/_styles.scss */
+a {
+  color: #2A1A14;
+}
+
+/* line 14, ../scss/_styles.scss */
 h1 {
   font-family: Baron;
   font-size: 4em;
@@ -267,7 +272,7 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 17, ../scss/_styles.scss */
+/* line 21, ../scss/_styles.scss */
 h2 {
   font-family: Baron;
   font-size: 3em;
@@ -275,7 +280,14 @@ h2 {
   text-align: center;
 }
 
-/* line 24, ../scss/_styles.scss */
+/* line 28, ../scss/_styles.scss */
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* line 34, ../scss/_styles.scss */
 body {
   font-family: sans-serif;
   font-size: 16px;
@@ -283,7 +295,7 @@ body {
   height: 100%;
 }
 
-/* line 31, ../scss/_styles.scss */
+/* line 41, ../scss/_styles.scss */
 #header {
   background: transparent url(../img/bg.jpg) 0 0 no-repeat fixed;
   background-size: cover;
@@ -294,31 +306,31 @@ body {
   padding: 0;
   text-transform: uppercase;
 }
-/* line 41, ../scss/_styles.scss */
+/* line 51, ../scss/_styles.scss */
 #header .span_12 {
   text-align: center;
 }
-/* line 45, ../scss/_styles.scss */
+/* line 55, ../scss/_styles.scss */
 #header .row {
   margin: 80px auto 150px;
 }
-/* line 49, ../scss/_styles.scss */
+/* line 59, ../scss/_styles.scss */
 #header .row:first-child {
   margin: auto;
   padding-top: 35px;
 }
 
-/* line 56, ../scss/_styles.scss */
+/* line 66, ../scss/_styles.scss */
 #main {
   background: #EDE8EB;
   border-top: 25px solid #CEBAB7;
   padding: 70px 0;
 }
-/* line 62, ../scss/_styles.scss */
+/* line 72, ../scss/_styles.scss */
 #main .gutters p {
   margin: 70px 0;
 }
-/* line 64, ../scss/_styles.scss */
+/* line 74, ../scss/_styles.scss */
 #main .gutters p::first-letter {
   float: left;
   font-family: Dense;
@@ -326,20 +338,44 @@ body {
   margin: -7px 5px -7px 0;
 }
 
-/* line 74, ../scss/_styles.scss */
+/* line 85, ../scss/_styles.scss */
+.timetable ul {
+  margin-bottom: 10px;
+}
+/* line 89, ../scss/_styles.scss */
+.timetable span {
+  display: inline-block;
+  font-weight: bold;
+  width: 57px;
+}
+
+/* line 96, ../scss/_styles.scss */
 #locatie {
   border-top: 25px solid #CEBAB7;
   height: 450px;
 }
 
-/* line 79, ../scss/_styles.scss */
+/* line 101, ../scss/_styles.scss */
 #sponsors {
   background: #CEBAB7;
   border-top: 25px solid #CF996E;
   padding-bottom: 50px;
 }
 
-/* line 85, ../scss/_styles.scss */
+/* line 107, ../scss/_styles.scss */
+#deelnemers {
+  background: #AEC7D2;
+  border-top: 25px solid #918867;
+  padding-bottom: 50px;
+}
+/* line 112, ../scss/_styles.scss */
+#deelnemers a:after {
+  content: '\a';
+  line-height: 26px;
+  white-space: pre;
+}
+
+/* line 119, ../scss/_styles.scss */
 .button {
   border: 3px solid #ffffff;
   color: #ffffff;
@@ -350,7 +386,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 95, ../scss/_styles.scss */
+/* line 129, ../scss/_styles.scss */
 .darken {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;

@@ -66,20 +66,21 @@
                     &nbsp;
                 </div>
                  <div class="col span_6">
-                    <ul>
-                        <li>Vrijdag 21 november
+                    <h2>Timetable</h2>
+                    <ul class="timetable">
+                        <li><h3>Vrijdag 21 november</h3>
                             <ul>
-                                <li>18:30 inloop</li>
-                                <li>20:00 startspeech</li>
-                                <li>20:30 aanvang hacken</li>
+                                <li><span>18:30 - </span>Inloop</li>
+                                <li><span>20:00 - </span>Welkom en uitleg</li>
+                                <li><span>20:30 - </span>Aanvang hacken</li>
                             </ul>
                         </li>
-                        <li>Zaterdag 22 november
+                        <li><h3>Zaterdag 22 november</h3>
                             <ul>
-                                <li>8:00 ontbijt</li>
-                                <li>12:00 lunch</li>
-                                <li>15:00 presenteren</li>
-                                <li>16:00 uitslag + borrel</li>
+                                <li><span>08:00 - </span>Ontbijt</li>
+                                <li><span>12:00 - </span>Lunch</li>
+                                <li><span>15:00 - </span>Presentaties</li>
+                                <li><span>16:00 - </span>Prijsuitreiking + borrel</li>
                             </ul>
                         </li>
                     </ul>
@@ -90,36 +91,35 @@
     	</div>
     	<div id="locatie">
     	</div>
-        <div id="sponsors">
+        <div id="deelnemers">
             <div class="container row">
                 <div class="col span_12">
-                    <h2>Sponsoren</h2>
-                </div>
-                <!--<div class="container row gutters">
-                    <div class="col span_6">
-                        Disco
-                    </div>
-                    <div class="col span_6">
-                        Discospikkels
-                    </div>
-                </div>-->
-            </div>
-        </div>
-        <!--<div id="jury">
-            <div class="container row">
-                <div class="col span_12">
-                    <h2>Jury</h2>
+                    <h2>Deelnemers</h2>
                 </div>
                 <div class="container row gutters">
                     <div class="col span_6">
-                        Disco
+                        <a href="https://twitter.com/PizzaPete" target="_blank">@PizzaPete</a>
+                        <a href="https://twitter.com/sandersTom" target="_blank">@sandersTom</a>
                     </div>
                     <div class="col span_6">
-                        Discospikkels
+                        <a href="https://twitter.com/kaspereden" target="_blank">@Kaspereden</a>
+                        <a href="https://twitter.com/zegerhoogeboom" target="_blank">@Zegerhoogeboom</a>
                     </div>
                 </div>
             </div>
-        </div>-->
+        </div>
+        <div id="sponsors">
+            <div class="container row">
+                <div class="col span_12">
+                    <h2>Partners</h2>
+                </div>
+                <div class="container row gutters">
+                    <div class="col span_6">
+                        <img src="assets/img/gx.png" alt="GX Software" width="200" height="113" />
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
@@ -145,7 +145,7 @@
                     disableDoubleClickZoom: true,
                     mapTypeControl: false,
                     scaleControl: true,
-                    scrollwheel: true,
+                    scrollwheel: false,
                     panControl: true,
                     streetViewControl: false,
                     draggable : true,
@@ -166,7 +166,6 @@
                     if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
                     if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
                     marker = new google.maps.Marker({
-                        icon: '',
                         position: new google.maps.LatLng(locations[i][5], locations[i][6]),
                         map: map,
                         title: locations[i][0],
@@ -176,6 +175,9 @@
                         web: web
                     });
                 }
+                google.maps.event.addListener(map, 'click', function(event){
+                    this.setOptions({scrollwheel:true});
+                });
             }
         </script>
     </body>
