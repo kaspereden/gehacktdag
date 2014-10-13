@@ -11,6 +11,14 @@ a {
 	color: #2A1A14;
 }
 
+p {
+	margin: 0 0 5px;
+}
+
+ul {
+	margin: 0 0 5px;
+}
+
 h1 {
 	font-family: Baron;
 	font-size: 4em;
@@ -44,7 +52,6 @@ body {
 	color: #ffffff;
 	font-family: Dense;
 	font-size: 3em;
-	min-height: 100%;
 	padding: 0;
 	text-transform: uppercase;
 
@@ -93,13 +100,18 @@ body {
 	}
 }
 
-#locatie {
+#locaties {
+	background: #DDDCDD;
 	border-top: 25px solid #CEBAB7;
+}
+
+#locatie {
 	height: 450px;
+	margin-top: 50px;
 }
 
 #sponsors {
-	background: #CEBAB7;
+	background: #FFD8E4;
 	border-top: 25px solid #CF996E;
 	padding-bottom: 50px;
 }
@@ -108,11 +120,24 @@ body {
 	background: #AEC7D2;
 	border-top: 25px solid #918867;
 	padding-bottom: 50px;
+}
 
-	a:after {
-		content: '\a';
-		line-height: 26px;
-		white-space: pre;
+table {
+	width: 100%;
+
+	caption {
+		font-weight: bold;
+		padding: 5px;
+	}
+
+	th {
+		font-weight: bold;
+	}
+
+	th,
+	td {
+		padding: 5px;
+		width: 50%;
 	}
 }
 
@@ -124,6 +149,11 @@ body {
 	padding: 10px 25px;
 	text-decoration: none;
 	background-color: rgba(0, 0, 0, 0.3);
+
+	&:hover {
+		border-color: #DDDCDD;
+		color: #DDDCDD;
+	}
 }
 
 .darken {

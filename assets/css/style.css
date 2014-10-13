@@ -265,6 +265,16 @@ a {
 }
 
 /* line 14, ../scss/_styles.scss */
+p {
+  margin: 0 0 5px;
+}
+
+/* line 18, ../scss/_styles.scss */
+ul {
+  margin: 0 0 5px;
+}
+
+/* line 22, ../scss/_styles.scss */
 h1 {
   font-family: Baron;
   font-size: 4em;
@@ -272,7 +282,7 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 21, ../scss/_styles.scss */
+/* line 29, ../scss/_styles.scss */
 h2 {
   font-family: Baron;
   font-size: 3em;
@@ -280,14 +290,14 @@ h2 {
   text-align: center;
 }
 
-/* line 28, ../scss/_styles.scss */
+/* line 36, ../scss/_styles.scss */
 h3 {
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-/* line 34, ../scss/_styles.scss */
+/* line 42, ../scss/_styles.scss */
 body {
   font-family: sans-serif;
   font-size: 16px;
@@ -295,42 +305,41 @@ body {
   height: 100%;
 }
 
-/* line 41, ../scss/_styles.scss */
+/* line 49, ../scss/_styles.scss */
 #header {
   background: transparent url(../img/bg.jpg) 0 0 no-repeat fixed;
   background-size: cover;
   color: #ffffff;
   font-family: Dense;
   font-size: 3em;
-  min-height: 100%;
   padding: 0;
   text-transform: uppercase;
 }
-/* line 51, ../scss/_styles.scss */
+/* line 58, ../scss/_styles.scss */
 #header .span_12 {
   text-align: center;
 }
-/* line 55, ../scss/_styles.scss */
+/* line 62, ../scss/_styles.scss */
 #header .row {
   margin: 80px auto 150px;
 }
-/* line 59, ../scss/_styles.scss */
+/* line 66, ../scss/_styles.scss */
 #header .row:first-child {
   margin: auto;
   padding-top: 35px;
 }
 
-/* line 66, ../scss/_styles.scss */
+/* line 73, ../scss/_styles.scss */
 #main {
   background: #EDE8EB;
   border-top: 25px solid #CEBAB7;
   padding: 70px 0;
 }
-/* line 72, ../scss/_styles.scss */
+/* line 79, ../scss/_styles.scss */
 #main .gutters p {
   margin: 70px 0;
 }
-/* line 74, ../scss/_styles.scss */
+/* line 81, ../scss/_styles.scss */
 #main .gutters p::first-letter {
   float: left;
   font-family: Dense;
@@ -338,44 +347,64 @@ body {
   margin: -7px 5px -7px 0;
 }
 
-/* line 85, ../scss/_styles.scss */
+/* line 92, ../scss/_styles.scss */
 .timetable ul {
   margin-bottom: 10px;
 }
-/* line 89, ../scss/_styles.scss */
+/* line 96, ../scss/_styles.scss */
 .timetable span {
   display: inline-block;
   font-weight: bold;
   width: 57px;
 }
 
-/* line 96, ../scss/_styles.scss */
-#locatie {
+/* line 103, ../scss/_styles.scss */
+#locaties {
+  background: #DDDCDD;
   border-top: 25px solid #CEBAB7;
-  height: 450px;
 }
 
-/* line 101, ../scss/_styles.scss */
+/* line 108, ../scss/_styles.scss */
+#locatie {
+  height: 450px;
+  margin-top: 50px;
+}
+
+/* line 113, ../scss/_styles.scss */
 #sponsors {
-  background: #CEBAB7;
+  background: #FFD8E4;
   border-top: 25px solid #CF996E;
   padding-bottom: 50px;
 }
 
-/* line 107, ../scss/_styles.scss */
+/* line 119, ../scss/_styles.scss */
 #deelnemers {
   background: #AEC7D2;
   border-top: 25px solid #918867;
   padding-bottom: 50px;
 }
-/* line 112, ../scss/_styles.scss */
-#deelnemers a:after {
-  content: '\a';
-  line-height: 26px;
-  white-space: pre;
+
+/* line 125, ../scss/_styles.scss */
+table {
+  width: 100%;
+}
+/* line 128, ../scss/_styles.scss */
+table caption {
+  font-weight: bold;
+  padding: 5px;
+}
+/* line 133, ../scss/_styles.scss */
+table th {
+  font-weight: bold;
+}
+/* line 138, ../scss/_styles.scss */
+table th,
+table td {
+  padding: 5px;
+  width: 50%;
 }
 
-/* line 119, ../scss/_styles.scss */
+/* line 144, ../scss/_styles.scss */
 .button {
   border: 3px solid #ffffff;
   color: #ffffff;
@@ -385,8 +414,13 @@ body {
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.3);
 }
+/* line 153, ../scss/_styles.scss */
+.button:hover {
+  border-color: #DDDCDD;
+  color: #DDDCDD;
+}
 
-/* line 129, ../scss/_styles.scss */
+/* line 159, ../scss/_styles.scss */
 .darken {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
