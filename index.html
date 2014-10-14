@@ -61,39 +61,133 @@
                 <div class="col span_3">
                 </div>
             </div>
-    	</div>
-    	<div id="locatie">
-    	</div>
-        <div id="sponsors">
-            <div class="container row">
-                <div class="col span_12">
-                    <h2>Sponsoren</h2>
+            <div class="container row gutters">
+                <div class="col span_3">
+                    &nbsp;
                 </div>
-                <!--<div class="container row gutters">
-                    <div class="col span_6">
-                        Disco
-                    </div>
-                    <div class="col span_6">
-                        Discospikkels
-                    </div>
-                </div>-->
+                 <div class="col span_6">
+                    <h2>Timetable</h2>
+                    <ul class="timetable">
+                        <li><h3>Vrijdag 21 november</h3>
+                            <ul>
+                                <li><span>18:30 - </span>Inloop</li>
+                                <li><span>20:00 - </span>Welkom en uitleg</li>
+                                <li><span>20:30 - </span>Aanvang hacken</li>
+                            </ul>
+                        </li>
+                        <li><h3>Zaterdag 22 november</h3>
+                            <ul>
+                                <li><span>08:00 - </span>Ontbijt</li>
+                                <li><span>12:00 - </span>Lunch</li>
+                                <li><span>15:00 - </span>Presentaties</li>
+                                <li><span>16:00 - </span>Prijsuitreiking + borrel</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col span_3">
+                </div>
             </div>
-        </div>
-        <!--<div id="jury">
+    	</div>
+    	<div id="locaties">
             <div class="container row">
                 <div class="col span_12">
-                    <h2>Jury</h2>
+                    <h2>Locatie</h2>
                 </div>
                 <div class="container row gutters">
                     <div class="col span_6">
-                        Disco
+                        <h3>WTC Papendorp (Utrecht)</h3>
+                        <p>Gebouw E, 9e etage</p>
+                        <p>Papendorpseweg 100</p>
+                        <p>3528 BJ Utrecht</p>
                     </div>
                     <div class="col span_6">
-                        Discospikkels
+                        <h3>Openbaar vervoer</h3>
+                        <p>Vanaf Utrecht CS gaan er een aantal bussen richting Gehacktdag. De volgende bussen kun je nemen:</p>
+                        <ul>
+                            <li>- Bus 24 (richting busstation de Meern oost)</li>
+                            <li>- Bus 102 (richting Woerden)</li>
+                            <li>- Bus 103 (richting Woerden station zuid)</li>
+                            <li>- Bus 195 (richting Schoonhoven of Rotterdam)</li>
+                            <li>- Bus 295 (richting Schoonhoven Henri Dunantpl.)</li>
+                        </ul>
+                        <p>Stap voor alle bussen uit bij bushalte P+R Papendorp<p>
+                        <p>Vanaf de bushalte is het nog ongeveer 8 minuten lopen naar het WTC Papendorp.</p>
                     </div>
                 </div>
             </div>
-        </div>-->
+            <div class="row">
+                <div class="col span_12">
+                    <div id="locatie"></div>
+                </div>
+            </div>
+    	</div>
+        <div id="deelnemers">
+            <div class="container row">
+                <div class="col span_12">
+                    <h2>Deelnemers</h2>
+                </div>
+                <div class="container row gutters">
+                    <div class="col span_12">
+                        <table>
+                            <caption>Deelnemerslijst Gehacktdag 2014</caption>
+                            <tr>
+                                <th>
+                                    Naam
+                                </th>
+                                <th>
+                                    Twitter Handle
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Kasper Reijnders
+                                </td>
+                                <td>
+                                    <a href="https://twitter.com/kaspereden" target="_blank">@Kaspereden</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Pieter Bogaerts
+                                </td>
+                                <td>
+                                    <a href="https://twitter.com/PizzaPete" target="_blank">@PizzaPete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tom Sanders
+                                </td>
+                                <td>
+                                    <a href="https://twitter.com/sandersTom" target="_blank">@sandersTom</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Zeger Hoogeboom
+                                </td>
+                                <td>
+                                    <a href="https://twitter.com/zegerhoogeboom" target="_blank">@Zegerhoogeboom</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sponsors">
+            <div class="container row">
+                <div class="col span_12">
+                    <h2>Partners</h2>
+                </div>
+                <div class="container row gutters">
+                    <div class="col span_6">
+                        <img src="assets/img/gx.png" alt="GX Software" width="200" height="113" />
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
@@ -119,7 +213,7 @@
                     disableDoubleClickZoom: true,
                     mapTypeControl: false,
                     scaleControl: true,
-                    scrollwheel: true,
+                    scrollwheel: false,
                     panControl: true,
                     streetViewControl: false,
                     draggable : true,
@@ -140,7 +234,6 @@
                     if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
                     if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
                     marker = new google.maps.Marker({
-                        icon: '',
                         position: new google.maps.LatLng(locations[i][5], locations[i][6]),
                         map: map,
                         title: locations[i][0],
@@ -150,6 +243,9 @@
                         web: web
                     });
                 }
+                google.maps.event.addListener(map, 'click', function(event){
+                    this.setOptions({scrollwheel:true});
+                });
             }
         </script>
     </body>

@@ -1,1 +1,428 @@
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,caption,canvas,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,form,footer,header,hgroup,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,main,small,span,strike,strong,sub,summary,sup,tt,table,tbody,textarea,tfoot,thead,time,tr,th,td,u,ul,var,video{font-family:inherit;font-size:100%;font-weight:inherit;font-style:inherit;vertical-align:baseline;white-space:normal;text-align:left;margin:0;padding:0;border:0;outline:0;background:transparent}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}table{border-collapse:collapse;border-spacing:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;*behavior:url(/scripts/boxsizing.htc)}.container{max-width:960px;margin:0 auto}.container:after,.row:after,.col:after,.clr:after,.group:after{content:"";display:table;clear:both}.row{padding-bottom:0em}.col{display:block;float:left;width:100%}@media (min-width: 768px){.gutters .col{margin-left:2%}.gutters .col:first-child{margin-left:0}}@media (min-width: 768px){.span_1{width:8.33333333333%}.span_2{width:16.6666666667%}.span_3{width:25%}.span_4{width:33.3333333333%}.span_5{width:41.6666666667%}.span_6{width:50%}.span_7{width:58.3333333333%}.span_8{width:66.6666666667%}.span_9{width:75%}.span_10{width:83.3333333333%}.span_11{width:91.6666666667%}.span_12{width:100%}.gutters .span_1{width:6.5%}.gutters .span_2{width:15.0%}.gutters .span_3{width:23.5%}.gutters .span_4{width:32.0%}.gutters .span_5{width:40.5%}.gutters .span_6{width:49.0%}.gutters .span_7{width:57.5%}.gutters .span_8{width:66.0%}.gutters .span_9{width:74.5%}.gutters .span_10{width:83.0%}.gutters .span_11{width:91.5%}.gutters .span_12{width:100%}}@font-face{font-family:"Dense";src:url("../fonts/Dense-Regular.eot");src:url("../fonts/Dense-Regular.eot?#iefix") format("embedded-opentype"),url("../fonts/Dense-Regular.woff") format("woff"),url("../fonts/Dense-Regular.ttf") format("truetype"),url("../fonts/Dense-Regular.svg#Dense") format("svg");font-style:normal;font-weight:normal}@font-face{font-family:"Baron";src:url("../fonts/Baron-Neue.eot");src:url("../fonts/Baron-Neue.eot?#iefix") format("embedded-opentype"),url("../fonts/Baron-Neue.woff") format("woff"),url("../fonts/Baron-Neue.ttf") format("truetype"),url("../fonts/Baron-Neue.svg#Baron") format("svg");font-style:normal;font-weight:normal}html{height:100%}h1{font-family:Baron;font-size:4em;text-align:center;text-transform:uppercase}h2{font-family:Baron;font-size:3em;margin:50px auto;text-align:center}body{font-family:sans-serif;font-size:16px;color:#2A1A14;height:100%}#header{background:transparent url(../img/bg.jpg) 0 0 no-repeat fixed;background-size:cover;color:#ffffff;font-family:Dense;font-size:3em;min-height:100%;padding:0 0 35px 0;text-transform:uppercase}#header .span_12{text-align:center}#header .row{margin:80px auto 150px}#header .row:first-child{margin:auto;padding-top:35px}#main{background:#EDE8EB;border-top:25px solid #CEBAB7;padding:70px 0}#main .gutters p{margin:70px 0}#main .gutters p::first-letter{float:left;font-family:Dense;font-size:3em;margin:-7px 5px -7px 0}#locatie{border-top:25px solid #CEBAB7;height:450px}#sponsors{background:#CEBAB7;border-top:25px solid #CF996E;padding-bottom:50px}.button{border:3px solid #ffffff;color:#ffffff;display:inline-block;margin:75px 0;padding:10px 25px;text-decoration:none;background-color:rgba(0,0,0,0.3)}.darken{background-color:rgba(0,0,0,0.3);width:100%;height:100%}
+/*
+	RESET - ADAPTED FROM MEYER RESET
+	URL - http://meyerweb.com/eric/tools/css/reset/
+	LICENSE - PUBLIC DOMAIN
+*/
+/* RESET
+----------------------------------------------------------------------------------------------------*/
+/* line 18, ../scss/_reset.scss */
+a, abbr, acronym, address, applet, article, aside, audio,
+b, big, blockquote, body, caption, canvas, center, cite, code,
+dd, del, details, dfn, dialog, div, dl, dt, em, embed,
+fieldset, figcaption, figure, form, footer,
+header, hgroup, h1, h2, h3, h4, h5, h6, html,
+i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav,
+object, ol, output, p, pre, q, ruby,
+s, samp, section, main, small, span, strike, strong, sub, summary, sup,
+tt, table, tbody, textarea, tfoot, thead, time, tr, th, td,
+u, ul, var, video {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  white-space: normal;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+/* line 34, ../scss/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section, main {
+  display: block;
+}
+
+/* line 38, ../scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 41, ../scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 45, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*	12 COLUMN : RESPONSIVE GRID SYSTEM
+	DEVELOPER : DENIS LEBLANC
+	URL : http://responsive.gs
+	VERSION : 3.0
+	LICENSE : GPL & MIT */
+/* 	SET ALL ELEMENTS TO BOX-SIZING : BORDER-BOX */
+/* line 9, ../scss/_responsive.gs.12col.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(/scripts/boxsizing.htc);
+  /*	If you need support for IE7 and lower make 
+  	sure the boxsizing.htc file is linked properly.
+  	More info here:  https://github.com/Schepp/box-sizing-polyfill */
+}
+
+/*	MAIN CONTAINER 
+	Set the width to whatever you want the width of your site to be. */
+/* line 22, ../scss/_responsive.gs.12col.scss */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*	SELF CLEARING FLOATS - CLEARFIX METHOD */
+/* line 34, ../scss/_responsive.gs.12col.scss */
+.container:after,
+.row:after,
+.col:after,
+.clr:after,
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 	DEFAULT ROW STYLES 
+	Set bottom padding according to preference */
+/* line 42, ../scss/_responsive.gs.12col.scss */
+.row {
+  padding-bottom: 0em;
+}
+
+/* DEFAULT COLUMN STYLES */
+/* line 47, ../scss/_responsive.gs.12col.scss */
+.col {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 55, ../scss/_responsive.gs.12col.scss */
+  .gutters .col {
+    margin-left: 2%;
+  }
+
+  /* line 59, ../scss/_responsive.gs.12col.scss */
+  .gutters .col:first-child {
+    margin-left: 0;
+  }
+}
+/*	COLUMN WIDTH ON DISPLAYS +768px 
+	You might need to play with media queries here to suite your design. */
+@media (min-width: 768px) {
+  /* line 70, ../scss/_responsive.gs.12col.scss */
+  .span_1 {
+    width: 8.33333333333%;
+  }
+
+  /* line 71, ../scss/_responsive.gs.12col.scss */
+  .span_2 {
+    width: 16.6666666667%;
+  }
+
+  /* line 72, ../scss/_responsive.gs.12col.scss */
+  .span_3 {
+    width: 25%;
+  }
+
+  /* line 73, ../scss/_responsive.gs.12col.scss */
+  .span_4 {
+    width: 33.3333333333%;
+  }
+
+  /* line 74, ../scss/_responsive.gs.12col.scss */
+  .span_5 {
+    width: 41.6666666667%;
+  }
+
+  /* line 75, ../scss/_responsive.gs.12col.scss */
+  .span_6 {
+    width: 50%;
+  }
+
+  /* line 76, ../scss/_responsive.gs.12col.scss */
+  .span_7 {
+    width: 58.3333333333%;
+  }
+
+  /* line 77, ../scss/_responsive.gs.12col.scss */
+  .span_8 {
+    width: 66.6666666667%;
+  }
+
+  /* line 78, ../scss/_responsive.gs.12col.scss */
+  .span_9 {
+    width: 75%;
+  }
+
+  /* line 79, ../scss/_responsive.gs.12col.scss */
+  .span_10 {
+    width: 83.3333333333%;
+  }
+
+  /* line 80, ../scss/_responsive.gs.12col.scss */
+  .span_11 {
+    width: 91.6666666667%;
+  }
+
+  /* line 81, ../scss/_responsive.gs.12col.scss */
+  .span_12 {
+    width: 100%;
+  }
+
+  /* line 83, ../scss/_responsive.gs.12col.scss */
+  .gutters .span_1 {
+    width: 6.5%;
+  }
+
+  /* line 84, ../scss/_responsive.gs.12col.scss */
+  .gutters .span_2 {
+    width: 15.0%;
+  }
+
+  /* line 85, ../scss/_responsive.gs.12col.scss */
+  .gutters .span_3 {
+    width: 23.5%;
+  }
+
+  /* line 86, ../scss/_responsive.gs.12col.scss */
+  .gutters .span_4 {
+    width: 32.0%;
+  }
+
+  /* line 87, ../scss/_responsive.gs.12col.scss */
+  .gutters .span_5 {
+    width: 40.5%;
+  }
+
+  /* line 88, ../scss/_responsive.gs.12col.scss */
+  .gutters .span_6 {
+    width: 49.0%;
+  }
+
+  /* line 89, ../scss/_responsive.gs.12col.scss */
+  .gutters .span_7 {
+    width: 57.5%;
+  }
+
+  /* line 90, ../scss/_responsive.gs.12col.scss */
+  .gutters .span_8 {
+    width: 66.0%;
+  }
+
+  /* line 91, ../scss/_responsive.gs.12col.scss */
+  .gutters .span_9 {
+    width: 74.5%;
+  }
+
+  /* line 92, ../scss/_responsive.gs.12col.scss */
+  .gutters .span_10 {
+    width: 83.0%;
+  }
+
+  /* line 93, ../scss/_responsive.gs.12col.scss */
+  .gutters .span_11 {
+    width: 91.5%;
+  }
+
+  /* line 94, ../scss/_responsive.gs.12col.scss */
+  .gutters .span_12 {
+    width: 100%;
+  }
+}
+@font-face {
+  font-family: "Dense";
+  src: url("../fonts/Dense-Regular.eot");
+  src: url("../fonts/Dense-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Dense-Regular.woff") format("woff"), url("../fonts/Dense-Regular.ttf") format("truetype"), url("../fonts/Dense-Regular.svg#Dense") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Baron";
+  src: url("../fonts/Baron-Neue.eot");
+  src: url("../fonts/Baron-Neue.eot?#iefix") format("embedded-opentype"), url("../fonts/Baron-Neue.woff") format("woff"), url("../fonts/Baron-Neue.ttf") format("truetype"), url("../fonts/Baron-Neue.svg#Baron") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 6, ../scss/_styles.scss */
+html {
+  height: 100%;
+}
+
+/* line 10, ../scss/_styles.scss */
+a {
+  color: #2A1A14;
+}
+
+/* line 14, ../scss/_styles.scss */
+p {
+  margin: 0 0 5px;
+}
+
+/* line 18, ../scss/_styles.scss */
+ul {
+  margin: 0 0 5px;
+}
+
+/* line 22, ../scss/_styles.scss */
+h1 {
+  font-family: Baron;
+  font-size: 4em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 29, ../scss/_styles.scss */
+h2 {
+  font-family: Baron;
+  font-size: 3em;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* line 36, ../scss/_styles.scss */
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* line 42, ../scss/_styles.scss */
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #2A1A14;
+  height: 100%;
+}
+
+/* line 49, ../scss/_styles.scss */
+#header {
+  background: transparent url(../img/bg.jpg) 0 0 no-repeat fixed;
+  background-size: cover;
+  color: #ffffff;
+  font-family: Dense;
+  font-size: 3em;
+  padding: 0;
+  text-transform: uppercase;
+}
+/* line 58, ../scss/_styles.scss */
+#header .span_12 {
+  text-align: center;
+}
+/* line 62, ../scss/_styles.scss */
+#header .row {
+  margin: 80px auto 150px;
+}
+/* line 66, ../scss/_styles.scss */
+#header .row:first-child {
+  margin: auto;
+  padding-top: 35px;
+}
+
+/* line 73, ../scss/_styles.scss */
+#main {
+  background: #EDE8EB;
+  border-top: 25px solid #CEBAB7;
+  padding: 70px 0;
+}
+/* line 79, ../scss/_styles.scss */
+#main .gutters p {
+  margin: 70px 0;
+}
+/* line 81, ../scss/_styles.scss */
+#main .gutters p::first-letter {
+  float: left;
+  font-family: Dense;
+  font-size: 3em;
+  margin: -7px 5px -7px 0;
+}
+
+/* line 92, ../scss/_styles.scss */
+.timetable ul {
+  margin-bottom: 10px;
+}
+/* line 96, ../scss/_styles.scss */
+.timetable span {
+  display: inline-block;
+  font-weight: bold;
+  width: 57px;
+}
+
+/* line 103, ../scss/_styles.scss */
+#locaties {
+  background: #DDDCDD;
+  border-top: 25px solid #CEBAB7;
+}
+
+/* line 108, ../scss/_styles.scss */
+#locatie {
+  height: 450px;
+  margin-top: 50px;
+}
+
+/* line 113, ../scss/_styles.scss */
+#sponsors {
+  background: #FFD8E4;
+  border-top: 25px solid #CF996E;
+  padding-bottom: 50px;
+}
+
+/* line 119, ../scss/_styles.scss */
+#deelnemers {
+  background: #AEC7D2;
+  border-top: 25px solid #918867;
+  padding-bottom: 50px;
+}
+
+/* line 125, ../scss/_styles.scss */
+table {
+  width: 100%;
+}
+/* line 128, ../scss/_styles.scss */
+table caption {
+  font-weight: bold;
+  padding: 5px;
+}
+/* line 133, ../scss/_styles.scss */
+table th {
+  font-weight: bold;
+}
+/* line 138, ../scss/_styles.scss */
+table th,
+table td {
+  padding: 5px;
+  width: 50%;
+}
+
+/* line 144, ../scss/_styles.scss */
+.button {
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  display: inline-block;
+  margin: 75px 0;
+  padding: 10px 25px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 153, ../scss/_styles.scss */
+.button:hover {
+  border-color: #DDDCDD;
+  color: #DDDCDD;
+}
+
+/* line 159, ../scss/_styles.scss */
+.darken {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}

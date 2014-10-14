@@ -7,6 +7,18 @@ html {
 	height: 100%;
 }
 
+a {
+	color: #2A1A14;
+}
+
+p {
+	margin: 0 0 5px;
+}
+
+ul {
+	margin: 0 0 5px;
+}
+
 h1 {
 	font-family: Baron;
 	font-size: 4em;
@@ -19,6 +31,12 @@ h2 {
 	font-size: 3em;
 	margin: 50px auto;
 	text-align: center;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 body {
@@ -34,8 +52,7 @@ body {
 	color: #ffffff;
 	font-family: Dense;
 	font-size: 3em;
-	min-height: 100%;
-	padding: 0 0 35px 0;
+	padding: 0;
 	text-transform: uppercase;
 
 	.span_12 {
@@ -71,15 +88,57 @@ body {
 	}
 }
 
-#locatie {
+.timetable {
+	ul {
+		margin-bottom: 10px;
+	}
+
+	span {
+		display: inline-block;
+		font-weight: bold;
+		width: 57px;
+	}
+}
+
+#locaties {
+	background: #DDDCDD;
 	border-top: 25px solid #CEBAB7;
+}
+
+#locatie {
 	height: 450px;
+	margin-top: 50px;
 }
 
 #sponsors {
-	background: #CEBAB7;
+	background: #FFD8E4;
 	border-top: 25px solid #CF996E;
 	padding-bottom: 50px;
+}
+
+#deelnemers {
+	background: #AEC7D2;
+	border-top: 25px solid #918867;
+	padding-bottom: 50px;
+}
+
+table {
+	width: 100%;
+
+	caption {
+		font-weight: bold;
+		padding: 5px;
+	}
+
+	th {
+		font-weight: bold;
+	}
+
+	th,
+	td {
+		padding: 5px;
+		width: 50%;
+	}
 }
 
 .button {
@@ -90,6 +149,11 @@ body {
 	padding: 10px 25px;
 	text-decoration: none;
 	background-color: rgba(0, 0, 0, 0.3);
+
+	&:hover {
+		border-color: #DDDCDD;
+		color: #DDDCDD;
+	}
 }
 
 .darken {
