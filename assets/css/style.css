@@ -359,52 +359,57 @@ body {
 }
 
 /* line 103, ../scss/_styles.scss */
+.centered {
+  text-align: center;
+}
+
+/* line 107, ../scss/_styles.scss */
 #locaties {
   background: #DDDCDD;
   border-top: 25px solid #CEBAB7;
 }
 
-/* line 108, ../scss/_styles.scss */
+/* line 112, ../scss/_styles.scss */
 #locatie {
   height: 450px;
   margin-top: 50px;
 }
 
-/* line 113, ../scss/_styles.scss */
+/* line 117, ../scss/_styles.scss */
 #sponsors {
   background: #FFD8E4;
   border-top: 25px solid #CF996E;
   padding-bottom: 50px;
 }
 
-/* line 119, ../scss/_styles.scss */
+/* line 123, ../scss/_styles.scss */
 #deelnemers {
   background: #AEC7D2;
   border-top: 25px solid #918867;
   padding-bottom: 50px;
 }
 
-/* line 125, ../scss/_styles.scss */
+/* line 129, ../scss/_styles.scss */
 table {
   width: 100%;
 }
-/* line 128, ../scss/_styles.scss */
+/* line 132, ../scss/_styles.scss */
 table caption {
   font-weight: bold;
   padding: 5px;
 }
-/* line 133, ../scss/_styles.scss */
+/* line 137, ../scss/_styles.scss */
 table th {
   font-weight: bold;
 }
-/* line 138, ../scss/_styles.scss */
+/* line 142, ../scss/_styles.scss */
 table th,
 table td {
   padding: 5px;
   width: 50%;
 }
 
-/* line 144, ../scss/_styles.scss */
+/* line 148, ../scss/_styles.scss */
 .button {
   border: 3px solid #ffffff;
   color: #ffffff;
@@ -414,13 +419,13 @@ table td {
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.3);
 }
-/* line 153, ../scss/_styles.scss */
+/* line 157, ../scss/_styles.scss */
 .button:hover {
   border-color: #DDDCDD;
   color: #DDDCDD;
 }
 
-/* line 159, ../scss/_styles.scss */
+/* line 163, ../scss/_styles.scss */
 .darken {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
