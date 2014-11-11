@@ -26,8 +26,8 @@ h1 {
 	text-transform: uppercase;
 }
 
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 480px) {
 	h1 {
 		font-size: 3em;
@@ -169,6 +169,23 @@ table {
 	&:hover {
 		border-color: #DDDCDD;
 		color: #DDDCDD;
+	}
+}
+
+.inverse {
+	.button {
+		border: 3px solid #000;
+		color: #000;
+		display: inline-block;
+		margin: 75px 0;
+		padding: 10px 25px;
+		text-decoration: none;
+		background-color: rgba(255, 255, 255, 0.3);
+
+		&:hover {
+			border-color: #222322;
+			color: #222322;
+		}
 	}
 }
 
